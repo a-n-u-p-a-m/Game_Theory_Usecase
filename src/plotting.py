@@ -1,6 +1,5 @@
 """
 All matplotlib plotting functions for CLI / static figure generation.
-ASCII-safe for Windows consoles (FIX B10).
 """
 
 import numpy as np
