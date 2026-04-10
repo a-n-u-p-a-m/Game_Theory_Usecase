@@ -1,6 +1,5 @@
 """
 Q-learning simulation engine, impulse-response, and multi-seed experiments.
-Generalised for n firms (FIX B3, B4).
 """
 
 import numpy as np
