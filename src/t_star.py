@@ -90,11 +90,6 @@ def compute_T_star_analytical(pi_c: float, pi_n: float,
     """
     T* = min{T : C_mimic(T) >= p(T)*F}.
 
-    FIX B7: removed the shortcut 'if F >= F_max: return 1'.
-    For large F the expected fine at T=1 can exceed C_mimic(1),
-    making mimicry profitable at short audits.  The loop handles
-    all cases; returns T_max if IC never holds (mimicry undeterrable).
-
     tau_scale: controls p(T) = 1-exp(-T/tau_scale).
         DEFAULT_TAU=1.5 (fitted to empirical data).
         Use ORIGINAL_TAU=50 for the paper's original parametric model.
